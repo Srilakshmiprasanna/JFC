@@ -1,0 +1,44 @@
+<html>
+<head>
+</head>
+<body>
+<h4>ForEach operation:</h4>
+<p id="demo"></p>
+<h4>Push operation:</h4>
+<p id="demo1"></p>
+<h4>Pop operation:</h4>
+<p id="demo2"></p>
+<h4>Concat operation:</h4>
+<p id="demo3"></p>
+<h4>Join operation:</h4>
+<p id="demo4"></p>
+<h4>Sort operation:</h4>
+<p id="demo5"></p>
+
+
+<script>
+
+var array = ['Javascript', 'HTML', 'CSS']; 
+array.forEach( function() {
+    document.getElementById('demo').innerHTML=array;
+});
+
+array.push('web dev');
+document.getElementById('demo1').innerHTML=array;
+
+var last=array.pop();
+document.getElementById('demo2').innerHTML=last;
+
+var myArray=new Array('1','2','3','4','5');
+let  add=array.concat(myArray);
+document.getElementById('demo3').innerHTML=add;
+
+var list=myArray.join('   #$#   ');
+document.getElementById('demo4').innerHTML=list;
+
+var  array1=new Array('North','West','South','East');
+array1.sort();
+document.getElementById('demo5').innerHTML=array1;
+</script>
+</body>
+</html>

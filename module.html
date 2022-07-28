@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Modules</h1>
+
+<p id="demo"></p>
+
+<script type="module">
+import { name, age, fcolor, flocation } from "./person.html";
+
+let text = "My name is " + name + ", I am " + age + "."+"My favorite  color is "+ fcolor +" and my favorite location is "+flocation+"." ;
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>

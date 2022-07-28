@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>JavaScript Promise</h3>
+
+<p>Wait 3 seconds (3000 milliseconds).</p>
+
+<h1 id="demo"></h1>
+
+<script>
+const myPromise = new Promise(function(myResolve, myReject) {
+  setTimeout(function(){ myResolve("Talentio !!"); }, 3000);
+});
+
+myPromise.then(function(value) {
+  document.getElementById("demo").innerHTML = value;
+});
+</script>
+
+</body>
+</html>
